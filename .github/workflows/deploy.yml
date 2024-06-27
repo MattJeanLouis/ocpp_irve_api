@@ -19,7 +19,6 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: 22
         script: |
-          cd /home/debian/saas/
+          cd /home/debian/saas/ocpp_irve_api
           git pull origin main
-          cd ocpp_irve_api/
           docker-compose up -d
