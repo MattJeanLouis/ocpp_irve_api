@@ -9,7 +9,7 @@ services:
       - .:/app
     environment:
       - PYTHONUNBUFFERED=1
-    restart: unless-stopped
+    restart: always
 
 volumes:
   app-data:
